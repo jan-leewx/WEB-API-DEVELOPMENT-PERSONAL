@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "61ff95fb217abcce3cbec472"
+  },
+  "name": "januarius lee",
+  "email": "jan@gmail.com",
+  "password": "123456",
+  "__v": 0,
+  "role": "admin",
+  "address": "Compassvale bow The Quartz #05-06 S(544985)",
+  "phoneNumber": "98254890",
+  "token": "fb8c96622af1362d700534d24f51338e"
+},{
+  "_id": {
+    "$oid": "61ff960c217abcce3cbec474"
+  },
+  "name": "januarius lee",
+  "email": "lee@gmail.com",
+  "phoneNumber": "98254890",
+  "password": "12345",
+  "__v": 0,
+  "role": "customer"
+}]

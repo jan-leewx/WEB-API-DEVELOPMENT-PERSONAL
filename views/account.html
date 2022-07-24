@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/account.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body class="fade-in" class="light-theme">
+  <section id="section-menu">
+    <div class="nav">
+      <div class="logo">WhereFood</div>
+      <div id="hamburger">
+        <div></div>
+      </div>
+    </div>
+    <div id="overlay">
+      <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/view">Resturants</a></li>
+      <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/account">Account</a></li>
+      <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/cart">Cart</a></li>
+      <li class="section-menu-nav-li">
+        <label class="switch">
+          <input type="checkbox" id="switch" name="theme">
+          <span class="slider round"></span>
+        </label>
+      </li>
+    </div>
+  </section>
+  <section id="account-grid">
+    <form class="account-grid-section" id="sign-in" onsubmit="return login();">
+      <h1 id="account-h1">Sign In</h1>
+      <section id="signin-grid">
+        <section class="signin-grid-section">
+          <h1 class="signin-grid-section-content">Email: </h1>
+        </section>
+        <section class="signin-grid-section">
+          <input class="signin-grid-section-content-textbox" type="text" placeholder="Enter Email" name="email" id="email"
+            required>
+        </section>
+        <section class="signin-grid-section">
+          <h1 class="signin-grid-section-content">Password: </h1>
+        </section>
+        <section class="signin-grid-section">
+          <input class="signin-grid-section-content-textbox" type="password" placeholder="Enter Password" name="password" id="password"
+            required>
+        </section>
+        <section class="signin-grid-section">
+        </section>
+        <section class="signin-grid-section">
+          <button type="submit" class="signin-grid-section-content-textbox">Login</button>
+          <button type="button" class="signin-grid-section-content-textbox">Clear</button>
+        </section>
+      </section>
+    </form>
+    <div class="vl"></div>
+    <form id="sign-up" class="account-grid-section">
+      <h1 id="account-h1">Sign Up</h1>
+      <section id="signup-grid">
+        <section class="signup-grid-section">
+          <h1 class="signup-grid-section-content">Name: </h1>
+        </section>
+        <section class="signup-grid-section">
+          <input class="signup-grid-section-content-textbox" type="text" placeholder="Enter Name" name="name" id="name" required>
+        </section>
+        <section class="signup-grid-section">
+          <h1 class="signup-grid-section-content">Email: </h1>
+        </section>
+        <section class="signup-grid-section">
+          <input class="signup-grid-section-content-textbox" type="text" placeholder="Enter Email" name="email" id="emailup"
+            required>
+        </section>
+        <section class="signup-grid-section">
+          <h1 class="signup-grid-section-content">Phone Number: </h1>
+        </section>
+        <section class="signup-grid-section">
+          <input class="signup-grid-section-content-textbox" type="text" placeholder="Enter Phone Number"
+           id="phoneNum" name="phoneNumber" required>
+        </section>
+        <section class="signup-grid-section">
+          <h1 class="signup-grid-section-content">Password: </h1>
+        </section>
+        <section class="signup-grid-section">
+          <input class="signup-grid-section-content-textbox" type="password" placeholder="Enter Password" name="psw" id="passwordup"
+            required>
+        </section>
+        <section class="signup-grid-section">
+        </section>
+        <section class="signup-grid-section">
+          <button type="submit" class="signup-grid-section-content-textbox">Sign Up</button>
+          <button type="button" class="signup-grid-section-content-textbox">Clear</button>
+        </section>
+      </section>
+    </form>
+  </section>
+  <footer id="footer">
+    <h1 id="footer-h1">WhereFood? Created by Jen Xin, Januarius Lee and Samuel for WAD</h1>
+  </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/darkmode.js"></script>
+<script src="./js/add_user.js"></script>
+<script src="./js/login_user.js"></script>
+<script>
+  (() => {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("overlay");
+    let open = false;
+
+    const change = () => {
+      if (!open) {
+        hamburger.classList.add("open");
+        menu.classList.add("menu");
+      } else {
+        hamburger.classList.remove("open");
+        menu.classList.remove("menu");
+      }
+      open = !open;
+    };
+
+    hamburger.addEventListener("click", change);
+  })();
+</script>
+
+</html>

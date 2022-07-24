@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "61bbeef106656a2141d6a72e"
+  },
+  "img_path": "../",
+  "name": "Saizeriya",
+  "type": "italian",
+  "description": "Saizeriya is a global chain Italian Casual Dining Restaurant.  We, Saizeriya, are well known in Italian food culture as the Italian cuisine is recognized for quality and healthy food.  We, Saizeriya, want to provide most affordable, quality, and healthy Italian Food Dining Experience to our customers around the world.  We have more than over 1300 outlets worldwide. Located mainly in Japan, Singapore, Taiwan, Shanghai, Beijing, Guangzhou, and Hong Kong, (7 regions). Currently, there are 16 outlets in Singapore. We are targeting to open 50 outlets by year 2020 for our valued customers convenience sake.",
+  "open_hours": "11AM-10PM"
+},{
+  "_id": {
+    "$oid": "61de246eda0d4a832d04dcbf"
+  },
+  "name": "COLLIN'S",
+  "type": "western",
+  "img_path": "as",
+  "__v": 0,
+  "description": "COLLIN’S® continues to grow to be one of the most popular local brands in Singapore for quality and affordable western cuisine. It is with the continued support of our customers that we are able to bring more of what they love closer to them”, said Collin Ho – CEO & Founder, COLLIN’S®.",
+  "open_hours": "11AM-11PM"
+},{
+  "_id": {
+    "$oid": "61de253cda0d4a832d04dcc8"
+  },
+  "name": "JiaHe",
+  "type": "chinese",
+  "img_path": "asda",
+  "__v": 0,
+  "description": "Harmony begets prosperity. At the heart of Jia He lies this fundamental principle that transpired from the Chinese idiom “家和万事兴” (Jia He Wan Shi Xing). Rooted in this belief, we found “Jia He” to be a befitting name that will also guide our culinary philosophy.",
+  "open_hours": "11AM-10PM"
+},{
+  "_id": {
+    "$oid": "61de25fada0d4a832d04dcd1"
+  },
+  "name": "MR Uncle & Aunty Bistro",
+  "type": "indian",
+  "img_path": "asdas",
+  "__v": 0,
+  "description": "Here for hygienic and delicious Indian and western dishes. We are highly special on veg meal menu & Every Day have a Unique curries to our menu.. Unlimited Meal (Rice) Suvayana Vegetable 3 varieties (Keera) Siri Parupu Sambar ( Moong Dhal) Vattha Kolambu mix of Bitter, Spicy & Sour Melagu Rasam (pepper & dry chilli) pineapple More kolambu (Masala Butter milk) Rava payasam / Gulab Jamun Appalam ( Pappadam) Andhra Meal Podi & Ghee Sweet peda / Banana A great feast only $7 Special of Uncle Cheff🎶✌️ Just choose your Non Veg dishes by add a tinny $ and make a Non Veg full Meal as you desired. $2 chicken varuval / Peratal $3 Mutton Varuval / Chukka $5 crab / prawn pepper $5 Mutton Kodal & RIBS",
+  "open_hours": "11.30AM-10PM"
+},{
+  "_id": {
+    "$oid": "61de273cfa02a82177be5b8d"
+  },
+  "name": "ichiban boshi",
+  "type": "japanese",
+  "img_path": "ads",
+  "description": "Itacho Sushi is a subsidiary brand of Taste of Japan  Group founded in Hong Kong back in 2004. The group visualizes the importance to provide excellent quality of food in a comfortable dining environment, sincere service attitude at an affordable price point.",
+  "open_hours": "11AM - 10PM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61feaff9154a60d12371380c"
+  },
+  "name": "Test",
+  "type": "",
+  "img_path": "test",
+  "description": "test description",
+  "open_hours": "test",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffd70592020e8ef965ed3c"
+  },
+  "name": "Test",
+  "type": "",
+  "img_path": "test",
+  "description": "test description",
+  "open_hours": "test",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620004d4e02913c95fa5be68"
+  },
+  "name": "Test",
+  "type": "",
+  "img_path": "test",
+  "description": "test description",
+  "open_hours": "test",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620006cb396a7a975aa0dc78"
+  },
+  "name": "januarius lee",
+  "type": "",
+  "img_path": "test",
+  "description": "test description",
+  "open_hours": "test",
+  "__v": 0
+}]

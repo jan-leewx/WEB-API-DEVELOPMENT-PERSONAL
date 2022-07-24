@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/view_restaurant.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <title>WhereFood - View Restaurant</title>
+</head>
+
+<body class="fade-in" class="light-theme">
+  <section id="section-menu">
+    <div class="nav">
+      <div class="logo">WhereFood</div>
+      <div id="hamburger">
+        <div></div>
+      </div>
+    </div>
+    <div id="overlay">
+      <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/view">Resturants</a></li>
+      <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/account">Account</a></li>
+      <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/cart">Cart</a></li>
+      <li class="section-menu-nav-li">
+        <label class="switch">
+          <input type="checkbox" id="switch" name="theme">
+          <span class="slider round"></span>
+        </label>
+      </li>
+    </div>
+  </section>
+  <section id="view-resturant-section">
+    <h1 id="view-resturant-section-h1">View Avaliable Restaurants</h1>
+    <div id="restaurant-grid">
+    </div>
+  </section>
+  <footer id="footer">
+    <h1 id="footer-h1">WhereFood? Created by Jen Xin, Januarius Lee and Samuel for WAD</h1>
+  </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/view_restaurant.js"></script>
+<script src="./js/darkmode.js"></script>
+<script>
+  (() => {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("overlay");
+    let open = false;
+
+    const change = () => {
+      if (!open) {
+        hamburger.classList.add("open");
+        menu.classList.add("menu");
+      } else {
+        hamburger.classList.remove("open");
+        menu.classList.remove("menu");
+      }
+      open = !open;
+    };
+
+    hamburger.addEventListener("click", change);
+  })();
+</script>
+</html>

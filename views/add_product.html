@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/addproduct.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js" />
+    <title>WhereFood</title>
+</head>
+
+<body class="fade-in" class="light-theme">
+    <div id="div-background-overlay">
+        <section id="section-menu">
+            <div class="nav">
+                <div class="logo">WhereFood</div>
+                <div id="hamburger">
+                    <div></div>
+                </div>
+            </div>
+            <div id="overlay">
+                <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/view">Resturants</a></li>
+                <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/account">Account</a></li>
+                <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/cart">Cart</a></li>
+                <li class="section-menu-nav-li">
+                    <label class="switch">
+                        <input type="checkbox" id="switch" name="theme">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </div>
+        </section>
+    </div>
+    <form id="addProduct" class="addproduct-grid-section">
+        <h1 id="addproduct-h1">Add Product</h1>
+        <section id="addproduct-grid">
+          <section class="addproduct-grid-section">
+            <h1 class="addproduct-grid-section-content">Name: </h1>
+          </section>
+          <section class="addproduct-grid-section">
+            <input class="addproduct-grid-section-content-textbox" type="text" placeholder="Enter Name" name="name" id="name">
+          </section>
+          <section class="addproduct-grid-section">
+            <h1 class="addproduct-grid-section-content">Price: </h1>
+          </section>
+          <section class="addproduct-grid-section">
+            <input class="addproduct-grid-section-content-textbox" type="text" placeholder="Enter Price"
+             id="price" name="price" required>
+          </section>
+          <section class="addproduct-grid-section">
+            <h1 class="addproduct-grid-section-content">Description: </h1>
+          </section>
+          <section class="addproduct-grid-section">
+            <input class="addproduct-grid-section-content-textbox" type="text" placeholder="Enter Description"
+             id="description" name="description" required>
+          </section>
+          <section class="addproduct-grid-section">
+            <h1 class="addproduct-grid-section-content">Image: </h1>
+          </section>
+          <section class="addproduct-grid-section">
+            <input class="addproduct-grid-section-content-textbox" type="text" placeholder="Enter Image" name="image" id="image"
+              required>
+              </section>
+          <section class="addproduct-grid-section">
+          </section>
+          <section class="addproduct-grid-section">
+            <button type="submit" class="addproduct-grid-section-content-textbox">Add Product</button>
+          </section>
+        </section>
+      </form>
+    <footer id="footer">
+        <h1 id="footer-h1">WhereFood? Created by Jen Xin, Januarius Lee and Samuel for WAD</h1>
+    </footer>
+</body>
+<script src="./js/darkmode.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/add_product.js"></script>
+<script>
+    (() => {
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("overlay");
+        let open = false;
+
+        const change = () => {
+            if (!open) {
+                hamburger.classList.add("open");
+                menu.classList.add("menu");
+            } else {
+                hamburger.classList.remove("open");
+                menu.classList.remove("menu");
+            }
+            open = !open;
+        };
+
+        hamburger.addEventListener("click", change);
+    })();
+
+</script>
+
+</html>

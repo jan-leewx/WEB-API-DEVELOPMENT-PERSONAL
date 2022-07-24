@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js" />
+    <title>WhereFood</title>
+</head>
+
+<body class="fade-in" class="light-theme">
+    <div class="div-background-image">
+        <div id="div-background-overlay">
+            <section id="section-menu">
+                <div class="nav">
+                    <div class="logo">WhereFood</div>
+                    <div id="hamburger">
+                      <div></div>
+                    </div>
+                  </div>
+                <div id="overlay">
+                    <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/view">Resturants</a></li>
+                    <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/account">Account</a></li>
+                    <li class="section-menu-nav-li"><a class="section-menu-nav-li-a" href="/cart">Cart</a></li>
+                    <li class="section-menu-nav-li">
+                        <label class="switch">
+                            <input type="checkbox" id="switch" name="theme">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                  </div>
+            </section>
+        </div>
+    </div>
+    <section id="section-submenu">
+        <h1 class="section-submenu-h1"><a class="section-submenu-h1-a" href="/view">Resturants</a></h1>
+        <h1 class="section-submenu-h1">|</h1>
+        <h1 class="section-submenu-h1"><a class="section-submenu-h1-a" href="#">Account</a></h1>
+    </section>
+    <section>
+        <h1 id="section-h1">There's food for everyone!</h1>
+        <section id="section-grid">
+            <section class="section-grid-section">
+                <img src="/farhad-ibrahimzade-lKk2xzM0YFU-unsplash.jpg" alt="sushi image"
+                    class="section-grid-section-img">
+                <h2 class="section-grid-section-h2">Sushi</h2>
+            </section>
+            <section class="section-grid-section">
+                <img src="/sina-piryae-6XmQV6GccYU-unsplash.jpg" alt="burger image"
+                    class="section-grid-section-img">
+                <h2 class="section-grid-section-h2">Burger</h2>
+            </section>
+            <section class="section-grid-section">
+                <img src="/likemeat-CbNAuxSZTFo-unsplash.jpg" alt="pizza image"
+                    class="section-grid-section-img">
+                <h2 class="section-grid-section-h2">Pizza</h2>
+            </section>
+            <section class="section-grid-section">
+                <img src="/jan-nguyen-u9tN9NIJgMc-unsplash.jpg" alt="asian image"
+                    class="section-grid-section-img">
+                <h2 class="section-grid-section-h2">Asian</h2>
+            </section>
+            <section class="section-grid-section">
+                <img src="/kabir-cheema-GczhqFH2eSQ-unsplash.jpg" alt="snacks image"
+                    class="section-grid-section-img">
+                <h2 class="section-grid-section-h2">Snacks</h2>
+            </section>
+            <section class="section-grid-section">
+                <img src="/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="salad image"
+                    class="section-grid-section-img">
+                <h2 class="section-grid-section-h2">Salad</h2>
+            </section>
+            <section class="section-grid-section">
+                <img src="/annie-spratt-6SHd7Q-l1UQ-unsplash.jpg" alt="desert image"
+                    class="section-grid-section-img">
+                <h2 class="section-grid-section-h2">Desert</h2>
+            </section>
+        </section>
+    </section>
+    <section id="section-description">
+        <h1 id="section-description-h1">Why whereFood?</h1>
+        <li class="section-description-li">&#10004; Quickest Delivery Time</li>
+        <li class="section-description-li">&#10004; Large Assortment of Food</li>
+        <li class="section-description-li">&#10004; Many Promotions Avaliable</li>
+        <li class="section-description-li">&#10004; Simple to Use Platform</li>
+    </section>
+    <footer id="footer">
+        <h1 id="footer-h1">WhereFood? Created by Jen Xin, Januarius Lee and Samuel for WAD</h1>
+    </footer>
+</body>
+<script src="./js/darkmode.js"></script>
+<script>
+    (() => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("overlay");
+  let open = false;
+
+  const change = () => {
+    if (!open) {
+      hamburger.classList.add("open");
+      menu.classList.add("menu");
+    } else {
+      hamburger.classList.remove("open");
+      menu.classList.remove("menu");
+    }
+    open = !open;
+  };
+
+  hamburger.addEventListener("click", change);
+})();
+
+</script>
+</html>

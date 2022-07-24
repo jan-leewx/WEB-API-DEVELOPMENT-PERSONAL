@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/cart.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js" />
+    <title>WhereFood</title>
+</head>
+
+<body>
+    {{# if products }}
+    {{# each products }}
+    <div id="cart-grid">
+        <div class="cart-grid-items">
+            <img src="/farhad-ibrahimzade-lKk2xzM0YFU-unsplash.jpg" alt="sushi image" id="cart-grid-img">
+        </div>
+        <div class="cart-grid-items">
+            <div class="cart-grid-items-text"><strong>Name:</strong> {{ this.item.name }}
+            </div>
+            <div class="cart-grid-items-text"><strong>Price:</strong> ${{ this.price }}</div>
+            <div class="cart-grid-items-text"><strong>Quantity:</strong> {{ this.qty }}</div>
+            <br /><br /><br />
+            <a href="/reduce/{{this.item._id}}" class="next">Remove One</a>
+            <a href="/reduce/{{this.item._id}}" class="next">Remove All</a>
+        </div>
+    </div>
+    {{/each}}
+    <h1 class="cart-h1">Total:<strong> ${{ totalPrice }}</strong></h1>
+
+    <a href="/checkout" type="button" class="checkout">Checkout</a>
+    </div>
+    {{ else }}
+    <h1 class="cart-h1">No Items in Cart</h1>
+    {{/if}}
+</body>
+
+</html>
